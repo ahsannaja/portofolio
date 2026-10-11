@@ -16,9 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   sapaanElement.textContent = teksSapaan;
 
-  // 2. HITUNG UMUR OTOMATIS BERDASARKAN TANGGAL LAHIR
-  // Format Tanggal Lahir: YYYY-MM-DD (Tahun, Bulan-1, Tanggal)
-  const tanggalLahir = new Date(2007, 22, 12); // 12 desember 2072 (Bulan desember = indeks 4)
+  // 2. HITUNG UMUR OTOMATIS BERDASARKAN TANGGAL LAHIR (12 Desember 2007)
+  const tanggalLahir = new Date(2007, 11, 12); 
   const hariIni = new Date();
   
   let umur = hariIni.getFullYear() - tanggalLahir.getFullYear();
